@@ -1,0 +1,23 @@
+-- Basic Measures
+Total Revenue = SUM('sales'[Revenue])
+Net Revenue = [Total Revenue] + CALCULATE(SUM('sales'[Revenue]), 'sales'[Is_Return] = TRUE())
+Orders = DISTINCTCOUNT('sales'[Invoice])
+Customers = DISTINCTCOUNT('sales'[Customer_ID])
+
+-- Monthly Revenue (for charts)
+Monthly Revenue = 
+VAR m = EOMONTH(MAX('sales'[InvoiceDate_mod]), 0)
+RETURN CALCULATE([Total Revenue], DATESINPERIOD('sales'[InvoiceDate_mod], m, MONTH, 1))
+
+-- Return Impact
+Return Impact = CALCULATE(SUM('sales'[Revenue]), 'sales'[Is_Return] = TRUE())
+
+-- RFM columns (computed columns recommended)
+Recency (days) = 
+VAR lastDate = CALCULATE(MAX('sales'[InvoiceDate_mod]), ALLEXCEPT('sales','sales'[Customer_ID]))
+VAR asof = MAX('sales'[InvoiceDate_mod]) + 1
+RETURN DATEDIFF(lastDate, asof, DAY)
+
+Frequency = CALCULATE(DISTINCTCOUNT('sales'[Invoice]), ALLEXCEPT('sales','sales'[Customer_ID]))
+
+Monetary = CALCULATE(SUM('sales'[Revenue]), ALLEXCEPT('sales','sales'[Customer_ID]))
