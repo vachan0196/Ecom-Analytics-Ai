@@ -73,8 +73,3 @@ ecom_analytics_ai/
 ```
 
 
-
-## Notes
-- If COGS/margins aren’t available, present revenue + returns as quality proxies.
-- Returns: negatives in `Quantity` are treated as returns; we keep them but also report a “net revenue” KPI.
->>>>>>> e6a3085 (Initial commit - E-commerce Analytics & Forecasting Dashboard)
