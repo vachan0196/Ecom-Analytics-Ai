@@ -72,15 +72,7 @@ ecom_analytics_ai/
   └─ README.md
 ```
 
-## CV bullets (sample)
-- Built an **E‑commerce Analytics & Forecasting** app on a modernized UCI dataset: automated data cleaning, RFM segmentation, and SARIMA forecasting; delivered a Streamlit KPI dashboard used to surface **top‑product, country, and seasonality insights**.
-- Implemented **AI‑assisted NLQ** over DuckDB (NL→SQL) and **automated narrative** generation, reducing ad‑hoc analysis time by **~60%** while standardizing stakeholder reporting.
-- Ensured **reproducibility** with modular Python package, versioned requirements, and environment‑driven configuration; provided Power BI version with DAX KPIs.
 
-## LinkedIn post (template)
-> Shipped a CV‑ready **E‑commerce Analytics & Forecasting** dashboard (Python + Streamlit).  
-> Highlights: data cleaning pipeline, **RFM** customer segments, **SARIMA** monthly revenue forecast (+6M), and **NLQ** (ask “Which 10 products drove the most revenue in France in Q2 2024?” and get results).  
-> Repo + screenshots in comments. Happy to share the template!
 
 ## Notes
 - If COGS/margins aren’t available, present revenue + returns as quality proxies.
