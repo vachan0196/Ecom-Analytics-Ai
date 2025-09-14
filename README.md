@@ -2,7 +2,6 @@
 # Ecom-Analytics-Ai
 E-commerce Analytics &amp; Forecasting Dashboard (Python + Streamlit + AI).  Features data cleaning, RFM segmentation, SARIMA forecasting, automated narratives, and natural-language queries.
 
-=======
 # E‑commerce Analytics & Forecasting (AI‑Ready)
 End‑to‑end Data Analytics project using a modernized **UCI Online Retail II** dataset (dates shifted to 2023–2025).  
 Tech: Python, Pandas, Plotly, Statsmodels, DuckDB, Streamlit (+ optional LLM for NLQ & narratives).
