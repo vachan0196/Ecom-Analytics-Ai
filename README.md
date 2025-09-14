@@ -46,7 +46,7 @@ streamlit run dashboard_streamlit/app.py
 ```
 Optional: put your OpenAI key in `.env` to enable NLQ + LLM narratives.
 
-## Power BI (optional)
+## Power BI
 - Import `data/cleaned_online_retail.parquet` (or the original CSV) into Power BI.
 - Use measures from `powerbi/DAX_measures.txt` for KPIs.
 - Add line chart (Monthly Revenue), bar chart (Top Products), map (Revenue by Country).
