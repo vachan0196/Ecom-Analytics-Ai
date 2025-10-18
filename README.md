@@ -6,14 +6,6 @@ E-commerce Analytics &amp; Forecasting Dashboard (Python + Streamlit + AI).  Fea
 End‑to‑end Data Analytics project using a modernized **UCI Online Retail II** dataset (dates shifted to 2023–2025).  
 Tech: Python, Pandas, Plotly, Statsmodels, DuckDB, Streamlit (+ optional LLM for NLQ & narratives).
 
-## What you’ll show recruiters
-- Clean, well‑documented data pipeline (wrangling, data quality checks, reproducible saves)
-- KPI dashboard (revenue, top products, country trends) in Streamlit *(or Power BI)*
-- Customer Segmentation (RFM) with quantile scoring
-- Sales Forecasting (3–6 months) on monthly revenue (SARIMA via statsmodels / pmdarima)
-- **AI features**: Natural‑Language Query (NL→SQL over DuckDB) and Automated Narratives (templated + optional LLM)
-- Storytelling: clear README, screenshots, CV bullets
-
 ## Dataset
 Assume your CSV lives here on Windows:
 ```
